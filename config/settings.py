@@ -38,9 +38,9 @@ ALLOWED_HOSTS = [
     ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://jobboardbackend-1g1k.onrender.com/",
-    "https://jobboardbackend-1g1k.onrender.com/",
-    "http://localhost:3000/", 
+    "http://jobboardbackend-1g1k.onrender.com",
+    "https://jobboardbackend-1g1k.onrender.com",
+    "http://localhost:3000", 
  ] 
 
 # Application definition

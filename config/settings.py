@@ -61,7 +61,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    "core.middleware.PrintHostMiddleware",
+    "config.middleware.PrintHostMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.middleware.security.SecurityMiddleware",

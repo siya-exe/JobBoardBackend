@@ -29,16 +29,19 @@ SECRET_KEY = "django-insecure-w73gcln(th2n8h$1hdyg^#w&yjp6&#wy7h0)dy_b@%s(6#l99u
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ["*"]
 
-#ALLOWED_HOSTS = [
-#    ".onrender.com",  
-#    "jobboardbackend-1g1k.onrender.com",
-#   "localhost",
-#    "127.0.0.1",
-#    ]
+ALLOWED_HOSTS = [
+    ".onrender.com",  
+    "jobboardbackend-1g1k.onrender.com",
+    "localhost",
+    "127.0.0.1",
+    ]
 
-
+CORS_ALLOWED_ORIGINS = [
+    "http://jobboardbackend-1g1k.onrender.com/",
+    "https://jobboardbackend-1g1k.onrender.com/",
+    "http://localhost:3000/", 
+ ] 
 
 # Application definition
 
@@ -124,8 +127,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 AUTH_USER_MODEL = "users.User"
 ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
-CORS_ALLOW_ALL_ORIGINS = True 
-CORS_ALLOW_CREDENTIALS = True 
+#CORS_ALLOW_ALL_ORIGINS = True 
+#CORS_ALLOW_CREDENTIALS = True 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:8000",
     "https://localhost:8000",

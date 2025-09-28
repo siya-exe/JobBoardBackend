@@ -1,0 +1,5 @@
+workspace/
+logs/
+*.log
+*.tmp
+*.bak

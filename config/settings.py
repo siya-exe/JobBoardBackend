@@ -98,11 +98,10 @@ WSGI_APPLICATION = "config.wsgi.application"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        'default': dj_database_url.config(
-        default=os.getenv('DATABASE_URL'),
+    "default": dj_database_url.config(
+        default="postgresql://job_board_db_5qqx_user:Ip1S4QE0QVpZyFNAkPgksj2FG344igwv@dpg-d3cl4ummcj7s73dms9pg-a.frankfurt-postgres.render.com/job_board_db_5qqx",
         conn_max_age=600,
-        ssl_require=True
+        ssl_require=True,
     )
     # "ENGINE": "django.db.backends.sqlite3", 
     #   "NAME": BASE_DIR / "db.sqlite3",
